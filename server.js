@@ -12,6 +12,11 @@ app.post("/custom", (req, res) => {
     res.status(200).send("done")
 })
 
+app.post("/testing/api/custom", (req, res) => {
+    console.log("someone sent a request over here ", req.body);
+    res.status(200).send("done")
+})
+
 app.listen(4000, () => {
     console.log('server is running on port 4000')
 })
